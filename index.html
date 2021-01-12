@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+label{
+  color: red;
+  font-size: larger;
+}
+
+input[type=button] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      box-sizing: border-box;
+    }
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  display: none;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<h1>مديرية التربية والتعليم في أخترين</h1>
+<h2>نتائج المتقدمين لاختبار اللغة التركية للعام الدراسي 2020/2021</h2>
+<label>رقم الكملك</label>
+<input type="text" id="myInput"  placeholder="Kimlik Numrası.." title="Type in a num"><br>
+
+<input type="button" id="search" onclick="myFunction()" value="Search"><br>
+
+<label id="sonu"></label>
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:25%;">الرقم</th>
+    <th style="width:25%;">الرقم الوطني</th>
+    <th style="width:25%;">الاسم الثلاثي</th>
+    <th style="width:25%;">النتيجة</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>84292000185</td>
+    <td>HALID</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>38490269271</td>
+    <td>IBRAHİM</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1278598183</td>
+    <td>JUMAA</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>71723378739</td>
+    <td>OMER</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>69830260061</td>
+    <td>AHMED</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>78848938343</td>
+    <td>EMAD</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>72143594983</td>
+    <td>ALİ</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>61093741585</td>
+    <td>HUSEİN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>89448289711</td>
+    <td>HÜSEYİN</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>69809937697</td>
+    <td>HUDA</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>88388708405</td>
+    <td>SULIMAN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>59648216305</td>
+    <td>HAYRI</td>
+    <td>BAŞARISIZ</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>87255641111</td>
+    <td>MUHAMMED</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>28482542321</td>
+    <td>AIMAN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>93596374243</td>
+    <td>MEHMOUD</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>66892067577</td>
+    <td>FİRAS</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>71905210321</td>
+    <td>HASSAN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>76497543567</td>
+    <td>RAMA</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>63881900365</td>
+    <td>FAVVAZ</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>85372271051</td>
+    <td>AHMED</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>32068967989</td>
+    <td>AHMED</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>75605536637</td>
+    <td>AHMED</td>
+    <td>BAŞARILI
+    </td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>51786248743</td>
+    <td>İSAM</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>42569185775</td>
+    <td>MUHAMMED</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>87817934345</td>
+    <td>MUHAMMED</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>92897475079</td>
+    <td>TASNIM</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>25193976711</td>
+    <td>HUSEIN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>53061861135</td>
+    <td>HUSEIN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>82090919807</td>
+    <td>FATIMA</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>18561669193</td>
+    <td>HUSSAIN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>24293342303</td>
+    <td>ALA ALDIN</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>42371981725</td>
+    <td>MANAL</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>34210216921</td>
+    <td>AHMED</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>74106299997</td>
+    <td>ASAD</td>
+    <td>BAŞARISIZ
+    </td>
+  </tr>
+  
+
+</table>
+
+<script>
+    function myFunction() {
+    var sonu=0;
+    var table = document.getElementById("myTable");
+    var input = document.getElementById("myInput");
+    for(var i = 0; i < table.rows.length; i++)
+    {
+        var objCells = table.rows.item(i).cells;
+        for (var j = 0; j < objCells.length; j++) {
+                 if(input.value==objCells.item(1).innerHTML)
+                {
+                  sonu=objCells.item(2).innerHTML+" "+objCells.item(3).innerHTML;
+                }
+                  
+              }
+    }
+    if(sonu!=0){alert(sonu);}
+    else {alert("Not Found غير موجود")}
+    document.getElementById("myInput").value="";
+    }
+
+
+</script>
+
+</body>
+</html>
